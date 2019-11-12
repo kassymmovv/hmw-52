@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Circle from "./Components/Circle/Circle";
 
 class App extends Component {
