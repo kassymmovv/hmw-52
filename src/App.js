@@ -9,7 +9,7 @@ class App extends Component {
 
         let array = [];
         for (let i = 0; i < 5;) {
-            const number = Math.floor(Math.random() * 36) + 5;
+            const number = Math.floor(Math.random() * (36 - 5)+5);
             if (array.includes(number)) {
                 continue;
             } else {
@@ -29,8 +29,8 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                {this.state.numbers.map((dcc,id)=>{
-                    return <Circle key={id} number={dcc} />
+                {this.state.numbers.map((num,id)=>{
+                    return <Circle key={id} number={num} />
                 })}
                 <button onClick={this.generateNum}>
                     generate
