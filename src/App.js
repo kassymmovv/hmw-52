@@ -21,7 +21,7 @@ class App extends Component {
         let stateArray = [...this.state.numbers];
         stateArray = array;
         this.setState({
-            numbers: stateArray
+            numbers: stateArray.sort((a,b) => a-b)
         })
 
     };
